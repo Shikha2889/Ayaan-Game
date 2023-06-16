@@ -95,6 +95,11 @@ function setup() {
 
   reception = createSprite(width / 2, height / 2, 30, 30)
 
+  key = createSprite(width / 2, height / 2, 20, 20)
+  key.addImage("key", keyImg)
+  key.visible = true
+  key.scale = 0.03
+
   
 
   guestbook = createSprite(width / 2 + 100, height / 2, 20, 20)
@@ -182,10 +187,7 @@ function ReceptionScreen() {
   background(reception_bg)
   hotel.visible = false
 
-  key = createSprite(width / 2, height / 2, 20, 20)
-  key.addImage("key", keyImg)
-  key.visible = true
-  key.scale = 0.03
+  
 
   
 
